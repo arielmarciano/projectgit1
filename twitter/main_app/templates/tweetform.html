@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tweet</title>
+</head>
+<body>
+
+  <h1>Tweet for {{ user.username }}</h1>
+  <form method='POST'>
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" name="send">
+  </form>
+
+</body>
+</html>
